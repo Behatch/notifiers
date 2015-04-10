@@ -1,0 +1,13 @@
+default:
+    suites:
+        default:
+            contexts:
+                - Behat\MinkExtension\Context\MinkContext
+                - behatch:system
+                - Behatch\Notifier\Ubuntu
+    extensions:
+        Sanpi\Behatch\Extension: ~
+        Behat\MinkExtension\ServiceContainer\MinkExtension:
+            base_url: 'http://localhost:8080'
+            goutte: ~
+        Behatch\Notifier\Extension: ~

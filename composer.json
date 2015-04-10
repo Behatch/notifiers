@@ -1,0 +1,22 @@
+{
+    "name": "behatch/notifiers",
+    "description": "Behatch notifiers",
+    "keywords": ["BDD", "Behat", "Symfony2", "Notifiers"],
+    "type": "library",
+    "license": "beerware",
+
+    "require": {
+        "php": ">=5.4",
+        "behat/behat": "~3.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Behatch\\Notifier\\": "src/"
+        }
+    },
+
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
