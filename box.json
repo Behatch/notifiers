@@ -1,0 +1,8 @@
+{
+    "directories": ["src"],
+    "files": ["LICENSE"],
+    "main": "bin/main",
+    "output": "behatch_notifiers.phar",
+    "shebang": false,
+    "stub": "bin/stub.php"
+}
