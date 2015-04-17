@@ -2,7 +2,7 @@
 
 namespace Behatch\Notifier;
 
-class Ubuntu extends Notifier
+class Desktop extends Notifier
 {
     static private $icons = [];
 
