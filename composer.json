@@ -11,7 +11,9 @@
     },
 
     "require-dev": {
-        "kherge/box": "~2.0"
+        "kherge/box": "~2.0",
+        "behatch/contexts": "dev-master",
+        "behat/mink-goutte-driver": "~1.1"
     },
 
     "autoload": {

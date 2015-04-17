@@ -2,7 +2,6 @@ default:
     suites:
         default:
             contexts:
-                - Behat\MinkExtension\Context\MinkContext
                 - behatch:system
                 - Behatch\Notifier\Desktop
     extensions:
