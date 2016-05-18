@@ -11,6 +11,12 @@ class Slack extends Notifier
 
     public function __construct($url, $settings = [], $prefix = null, $attachment = [], $spamTimeout = 60)
     {
+
+        if (!class_exists('\\Maknz\\Slack\\Client')) {
+            $message = 'Class \Maknz\Slack\Client does not exist. Are you sure you have installed it? i.e. composer require "maknz/slack"';
+            throw new \Exception( $message );
+        }
+
         parent::__construct($spamTimeout);
 
         self::$url = $url;
