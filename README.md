@@ -10,6 +10,10 @@ Behatch notifiers provide notifiers for behat.
 
     $ composer require "behatch/notifiers"
 
+For Slack notifier, additionally
+
+    $ composer require "maknz/slack"
+
 ## Usage
 
 In ``behat.yml``, enable desired notifier:
@@ -24,6 +28,11 @@ default:
                     url: https://sample.campfirenow.com
                     token: 605b32dd
                     room: 1
+                - Behatch\Notifier\Slack
+                    url: https://hooks.slack.com/services/some-long/hook-url/goes-here
+                    spamTimeout: '10'
+                    prefix: 'Message Prefix'
+                    settings: {username: BehatBot, channel: '#general'}
 ```
 
 ## Configuration
@@ -36,3 +45,9 @@ default:
     * ``prefix``: title prefix
     * ``spamTimeout``: default time between two notifications (60 secondes)
     * ``icons``: array of emoticons (sad, smile and error)
+* ``Slack`` - notification over [slack](https://slack.com/)
+    * ``url``: Slack webhook url
+    * ``prefix``: title prefix
+    * ``spamTimeout``: default time between two notifications (60 secondes)
+    * ``settings``: Slack message settings (array)
+    * ``attachment``: Slack message attachment settings (array)
