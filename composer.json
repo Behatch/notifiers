@@ -16,6 +16,10 @@
         "behat/mink-goutte-driver": "~1.1"
     },
 
+    "suggest": {
+        "maknz/slack": "Allows you to use a Slack webhook as a notifier"
+    },
+
     "autoload": {
         "psr-4": {
             "Behatch\\Notifier\\": "src/"
